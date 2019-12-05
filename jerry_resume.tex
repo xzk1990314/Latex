@@ -1,0 +1,256 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{epsfig}
+\usepackage{CJKutf8}
+\usepackage[T1]{fontenc}
+
+% no section number display
+\makeatletter
+\def\@seccntformat#1{}
+\makeatother
+% no numbers in toc
+\renewcommand{\numberline}[1]{}
+
+\definecolor{bfcolor}{rgb}{.5,0,.5}
+\newcommand{\company}[1]{%
+  \textsl{#1}}
+\newcommand{\itembf}[1]{%
+  \textbf{\textcolor{bfcolor}{#1}}}
+\newcommand{\ssection}[1]{%
+  \section[#1]{\normalsize\scshape\textcolor{blue}{#1}}}
+\newcommand{\ssubsection}[1]{%
+  \subsection[#1]{\normalsize\textbf #1}}
+\newcommand{\smarginpar}[1]{%
+  \marginpar{\small\textit{#1}}}
+
+\pagestyle{fancy}
+\lhead{\sffamily{Jerry Fleming's Resum\'e, \textit{p\thepage}}}
+\chead{}
+\rhead{\sffamily{Powered by \normalfont\textit{\LaTeXe}\ (\href{http://blog.csdn.net/jerryfleming/archive/2007/06/25/1665211.aspx}{souce .tex and update})}}
+\cfoot{}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\topmargin}{0pt}
+\renewcommand{\footskip}{0pt}
+\addtolength{\headsep}{15pt} % space for the rule
+\fancypagestyle{plain}{%
+   \fancyhead{} % get rid of headers on plain pages
+   \fancyfoot{} % get rid of headers on plain pages
+   \renewcommand{\headrulewidth}{0pt} % and the line
+   \renewcommand{\footrulewidth}{0pt} % and the line
+}
+
+\usepackage[pdftitle={Jerry Fleming's Resume},pdftex,bookmarks,bookmarksopen=true,colorlinks]{hyperref}
+
+\begin{document}
+\thispagestyle{plain}
+\sffamily
+
+\title{%
+\rule[1mm]{.2\textwidth}{5pt}
+\textcolor{red}{\LARGE\textbf{Jerry Fleming's Resum\'e}}
+\rule[1mm]{.2\textwidth}{5pt}}
+\author{}
+\date{}
+\maketitle
+
+\ssection{Personal Details}
+\parshape=6
+0cm 10cm 0cm 10cm
+0cm 10cm 0cm 10cm
+0cm 10cm 0cm \linewidth
+\leavevmode\smash{\rlap{\hspace*{12cm}%
+\lower3.3cm\hbox{%
+\includegraphics[scale=.6]{jerry_profile.jpg}}}}%
+\itembf{Date of Birth} 5th Jun 1979\\
+\itembf{Mobile} 13764422215\\
+\itembf{Marital Status} married\\
+\itembf{Hometown} Xiangshui, Jiangsu\\
+\itembf{Blog} \href{http://blog.csdn.net/jerryfleming}{http://blog.csdn.net/jerryfleming}\\
+\itembf{Email \& MSN} \href{mailto:jerryfleming2006@gmail.com}{jerryfleming2006@gmail.com}\\
+\itembf{Location} Shanghai 20063\\
+\itembf{Residential Address} Rm 22-501, Lane 4005, Chuanzhou Rd
+
+\ssection{Objective}
+Position as a Senior Software Engineer (PHP, C) offering challenge and career advancement.
+
+\ssection{Qualifications}
+\begin{itemize}
+	\item 5 years full-time work experience in all aspects of dynamic website construction and Linux C programming.
+	\item Proven creativity and quality assuring skills in database management (MySQL / PostgreSQL), mass data processing (of voice files), UNIX server management, architecture / framework designing, OO programming, website optimization.
+	\item Profound interests in algorithms, artificial intelligence and Linux kernel hacking.
+	\item Strong problem solving skills and ability to learn very quickly.
+	\item Able to use own initiative and work as part of a team. Proficiency in English and French communication. Bachelor of English Language.
+	\item Object-oriented perceiving and UML modeling.
+\end{itemize}
+
+\ssection{Skills}
+\begin{itemize}
+	\item Expert in PHP, HTML/XML/CSS/JavaScript\footnote{Some of my code snippet can be found on my \href{http://blog.csdn.net/jerryfleming}{blog}.}and other WEB related technology.
+	\item Skilled in C, especially game algorithms.
+	\item Proficiency in Python and Perl programming, especially cross-platform (Windows and Linux).
+	\item Expert in MySQL; familiar with PostgreSQL.
+	\item Skilled with vim / emacs / elisp, fvwm, CVS / subversion and other Linux software\footnote{Yes, I am mostly a Unix / Linux worker.} for development. 
+	\item Experienced in bash / perl scripting for system administration
+	\item Skin-deep knowledge and a little experience with java, ASP, Visual Studio, Flash ActionScript and other languages.
+\end{itemize}
+
+\ssection{Education and Training}
+	\ssubsection{2003 -- 2005 \company{Graduate Program for Master of Software Engineering}}
+	Commercial Training\\
+	Mathematics, Software Engineering, Data Structure
+
+	\ssubsection{2002 -- 2003 \company{Communication Skills}}
+	Team working principles; documentation skills; efficient communication in project managerment.
+
+	\ssubsection{1998 -- 2002 \company{NANJING NORMAL UNIVERSITY}}
+	Bachelor of Arts\\
+	\itembf{MAJOR} Pedagogic English\\
+	\itembf{MINOR} English Linguistics and Literature\\
+	Graduated with honors
+
+\ssection{Software Engineer (PHP)}
+\begin{itemize}
+	\item Analyzing, designing and implementation of an industry-leading portal.
+	\item Processing and analyzing several megabytes data frequently (for administrative decisions, etc).
+	\item Website optimization human interface improvement, search engine optimization and technological / industrial standardization (with W3C, RFCs).
+	\item Designing a PHP-based architecture (iTemplate) with high performance even under a load average of 100,000 clicks daily (including many functional, reusable code segments frequently quoted over the Internet).
+\end{itemize}
+
+\ssection{Software Engineer (C)}
+\begin{itemize}
+	\item Text console game (with ncurses, libSDL, allego, etc) programming.
+	\item Socket programming between workstations and servers.
+	\item Kernel hacking for on-board chipsets.
+\end{itemize}
+
+\ssection{Network Administrator \& Translator}
+\begin{itemize}
+	\item TCP/IP networking and diagnosing.
+	\item Administering dozens of UNIX (WEB, FTP, SMTP, VPN, NFS, LDAP, and DNS) server with about 100 active websites.
+	\item Installation and configuration of LAMP server.
+	\item English Translator / Interpreter
+	\item Translation of various software documents.
+	\item Immediate interpreter for many a foreign meetings.
+\end{itemize}
+
+\ssection{Work History}
+
+	\ssubsection{\-\company{SAYBOT LLC} -- CA, US}% *TRICKY*: \- here is only to indent the company name
+	\textbf{Senior Engineer} \textsl{2006 -- 2007}\\
+	Wholly responsible for building distributed enterprise level curriculum development system, including LessonDEV, vTiger based CRM\footnote{This is only a hack of the source code to fit our business.}, and coordination of technical issues involving human voice processing, network servers, and system administration. In change of collecting and planning new features, arrangement of implementation and unit testing, and oversee project progress and release.\\
+
+	\noindent\textbf{Key Contributions}
+	\begin{itemize}
+		\item[-] Building a sophisticated lesson production tool LessonDEV from scratch, greatly facilitating the development of curriculum. 
+		\item[-] Processing and backup of mass data and ensure the safety and security
+		\item[-] Implementation of efficient and robust programs to convert voice files, validate XMLs and other business-critical applications
+		\item[-] Earned a reputation for on-time, on-budget completion of high-profile projects
+	\end{itemize}
+
+	\ssubsection{\-\company{TESTMART INC} -- SHANGHAI, CN}
+	\textbf{Senior Engineer} \textsl{2004 -- 2006}\\
+	Rapidly promoted to provide 7x24 web service to hundreds of thousands of visitors, and wholly responsible for a medium sized technical team performing maintenance, data analysis, and implementation of new features. Productive team leader, successfully resolved technical issues regarding database replication, server security, real time monitoring, and quick response even at very heavy load average, and polished core programs in C.\\
+
+	\ssubsection{\-\company{TONGSHI SOFTWARE CO LTD} -- SHANGHAI, CN}
+	\textbf{Senior Programmer} \textsl{2003 -- 2004}\\
+	Senior member of desktop application development team in charge of implementing, integrating, and testing numerous out-sourcing projects, working closely with senior executives to analyze, evaluate and release projects.
+
+	\ssubsection{\company{SHITONG TRANSLATION CO LTD} -- SHANGHAI, CN}
+	\textbf{Interpreter / Network Administrator} \textsl{2002 -- 2003}\\
+	Interpretation of technical meetings, translation of various professional documents in the line of software engineering, and manage a network of distributed workstations to support partners all over the country.
+
+\ssection{Key Accomplishments (Customers)}
+
+	\ssubsection{Jan 2006 -- Jan 2007 \company{Saybot LLC}}
+		\itembf{Project 1} LessonDEV, a sophisticated curriculum production tool build from scratch\\
+		\itembf{Project 2} Complicated voice data processing with sox, shntools\\
+		\itembf{Project 3} A polished CRM based on vTiger\\
+		\itembf{Development} C, PHP, Perl, Python, XML\\
+		\itembf{Tools} Debian, Fedora 6, ssh, rsync, sox, shntools, snd\\
+		\itembf{Description} solely in charge of the whole process, with occasional help from colleagues
+
+	\ssubsection{Jul 2004 -- Aug 2005 \company{Shanghai TestMart Inc}}
+		\itembf{Project 1}  management of integrated servers for dozens of enterprise applications\\
+		\itembf{Project 2}  rewriting of its industry portal with numerous additional features\\
+		\itembf{Project 3}  architecture of B/S application\\
+		\itembf{Development} PHP, C, bash, Python\\
+		\itembf{Tools} Debian, BugZilla, subversion\\
+		\itembf{Description} project manager and senior coder
+
+	\ssubsection{May 2005 -- Jun 2005 \company{www.love2marry.com}}
+		\itembf{Project} A template for medium-sized websites built from scratch with almost all components ready\\
+		\itembf{Development} PHP\\
+		\itembf{Tools} phpMyAdmin, MySQL\\
+		\itembf{Description} system analyzer and senior coder
+
+	\ssubsection{Feb 2005 -- May 2005 \company{EP Online}}
+		\itembf{Project} A distributed shipping management system to process orders and arrange ships\\
+		\itembf{Development} PHP, UML\\
+		\itembf{Tools} Debian, BugZilla, subversion\\
+		\itembf{Description} main contributed coder
+
+	\ssubsection{Mar 2005 -- May 2005 \company{www.5117.net}}
+		\itembf{Project} An online shop center for electronic instrument\\
+		\itembf{Development} PHP, Perl, Python\\
+		\itembf{Tools} Debian, DNS, FTP, BugZilla, CVS\\
+		\itembf{Description} contributed coder
+
+	\ssubsection{Feb 2004 -- Jun 2004 \company{Shanghai Wuyi Electronics Co Ltd}}
+		\itembf{Project} A company website\\
+		\itembf{Development} PHP\\
+		\itembf{Tools} Debian, Apache, MySQL\\
+		\itembf{Description} webdev and webdesign
+
+	\ssubsection{Feb 2004 -- May 2004 \company{Shanghai Tongshi Technology Co Ltd}}
+		\itembf{Project} An all-in-one EIP system\\
+		\itembf{Development} PHP, bash, Perl, sed\\
+		\itembf{Tools} Debian, Smarty, MySQL\\
+		\itembf{Description} testing and debugging
+
+	\ssubsection{Mar 2004 -- May 2004 \company{Bright Dairy Group}}
+		\itembf{Project} Raw milk accounting system\\
+		\itembf{Development} Delphi, VB\footnote{But I don't know much Delphi or VB now.}, C, PHP, bash, Perl\\
+		\itembf{Tools} Free BSD, MS Windows, phpMyAdmin, BugZilla\\
+		\itembf{Description} system analysis, testing
+
+	\ssubsection{Oct 2003 -- Feb 2004 \company{Shanghai Shenzhou Real Estate Inc}}
+		\itembf{Project} Confidential real estate information processing system\\
+		\itembf{Development} PHP, ASP\\
+		\itembf{Tools} MS Windows, SQL Server, Internet Explorer\\
+		\itembf{Description} webdev and webdesign
+
+	\ssubsection{Jun 2003 -- Aug 2003 \company{Zhongzhi Bank}}
+		\itembf{Project} A company website\\
+		\itembf{Development} java\\
+		\itembf{Tools} Free BSD, Oracle\\
+		\itembf{Description} webdev and webdesign
+
+	\ssubsection{Feb 2003 -- Mar 2003 \company{Winner Investment Inc}}
+		\itembf{Project} On demand heavy calculation of tons of data\\
+		\itembf{Development} PHP, JavaScript, SQL\\
+		\itembf{Tools} Red Hat, PostgreSQL\\
+		\itembf{Description} analyzer, main coder
+
+	\ssubsection{Oct 2002 -- Jan 2003 \company{Shanghai Shitong Translation Co Ltd}}
+		\itembf{Project} Automated translation request processing line\\
+		\itembf{Development} PHP, apache, java, C CGI\\
+		\itembf{Tools} Red Hat 8, Internet Explorer, Opera, MySQL\\
+		\itembf{Description} testing
+
+
+\ssection{Interests}
+Science, Literature, Philosophy
+
+\ssection{Summary}
+\itembf{Current Career Level} Senior Software Engineer\\
+\itembf{Relevant Work Experience} 5 years, fulltime\\
+\itembf{Work Status} Available with one month notice\\
+\itembf{Target Job} PHP / C Engineer\\
+\itembf{Location} Shanghai\\
+\itembf{Salary} 10, 000 per month x 14 months
+
+\end{document}
+
